@@ -12,6 +12,9 @@
     --black:#000000;
     --with:#FFF;
 }
+body{
+    background-color: var(--background);
+}
 a{
     text-decoration: none;
     color: var(--black);
@@ -20,14 +23,18 @@ ul li{
     list-style: none;
 }
 .container{
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
 }
 header{
     display: flex;
     justify-content: space-between;
+    padding: 10px 20px;
     align-items: center;
-    border-bottom: solid black 2px;
+    background-color: var(--with);
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 2px 10px var(--bg-footer);
 }
 header .logo a{
     font-weight: bold;
@@ -49,30 +56,33 @@ header .menuhamburger i{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 100px;
+    gap: 20px;
 }
 .home .info{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 .home .info .name h1{
     font-size: 29px;
     font-weight: bold;
+}
+.home .info .name h1 span{
+    color: var(--blue);
 }
 .home .info .name p{
     font-size: 15px;
     font-weight: lighter;
 }
 .home .info .buttons{
-    display: flex;
-    gap: 10px;
+    /* display: flex;
+    gap: 10px; */
 }
 .home .info .buttons a{
     display: inline-block;
     font-size:10px;
     width:90px;
-    padding: 8px 10px;
+    padding: 10px 10px;
     border-radius: 10px;
     text-align: center;
     border: solid 1px;
@@ -190,4 +200,44 @@ h2{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.contact input,textarea{
+    width: 100%;
+    padding: 8px 10px;
+    border: var(--black) solid 2px;
+    border-radius: 10px;
+}
+.contact button{
+    background-color: var(--blue);
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--with);
+    cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--bg-footer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+footer a{
+    color: var(--with);
+    font-size: 20px;
+    font-weight: bold;
+}
+footer .social-media-footer{
+    display: flex;
+    gap: 20px;
+}
+footer p{
+    color: var(--with);
 }
