@@ -6,6 +6,12 @@
     font-family: 'Poppins', sans-serif;
 }
 :root{
+    --html:90%;
+    --css:80%;
+    --bootstrap:60%;
+    --javascript:20%;
+    --php:70%;
+    --mysql:50%;
     --background:#F5F5F5;
     --blue:#4070F4;
     --bg-footer:#0D1730;
@@ -98,7 +104,17 @@ header .menuhamburger i{
 }
 
 /* home */
-
+.hello{
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+    
+}
 .home{
     margin-top: 50px;
     display: flex;
@@ -229,25 +245,48 @@ h2{
     flex-direction: column;
     gap: 20px;
 }
-.skills .prof-skills label{
+.skills .prof-skills span{
     font-weight:bold;
     padding: 10px;
 }
-.skills .prof-skills div{
+.skills .prof-skills .skill{
     background-color: var(--with);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.skills .prof-skill progress{
-}
-.skills progress{
-    width: 100%;
+
+.skills .progress{
+    background-color: var(--blue) !important;
+    height: 10px;
+    border-radius: 2px;
 }
 .skills img{
     width: 100%;
 }
 
-
+/* ----------------------skills progress---------------------------------- */
+.html{
+    width: var(--html);
+}
+.css{
+    width: var(--css);
+}
+.bootstrap{
+    width: var(--bootstrap);
+}
+.js{
+    width: var(--javascript);
+}
+.php{
+    width: var(--php);
+}
+.mysql{
+    width: var(--mysql);
+}
 /* works */
 
 .works{
@@ -313,3 +352,62 @@ footer p{
     color: var(--with);
 }
 
+@media screen and (min-width:500px){
+    header{
+        height: 60px;
+    }
+    header .menuhamburger{
+        display: none;
+    }
+    header ul {
+        display: flex;
+        gap: 50px;
+    }
+    header ul li{
+        font-weight: bold
+    }
+    header ul li:hover{
+        border-bottom: var(--blue) 2px solid;
+    }
+    .container{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .home{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .home .info{
+        align-items: flex-start;
+    }
+    .about{
+    }
+    .about .img-profil{
+        flex-direction: row;
+        gap: 300px;
+    }
+    .about .img-profil p,.about .img-profil h3{
+        text-align: left;
+    }
+    .about .img-profil img{
+        display: inline-block;
+    }
+    .skills .img-skills{
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+    }
+    .prof-skills{
+        width: 50%;
+    }
+    .works .works-detaille{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-between;
+    
+    }
+    form{
+        width: 50%;
+        margin-left: 25%;
+    }
+}
