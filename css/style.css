@@ -380,11 +380,9 @@ footer p{
     .home .info{
         align-items: flex-start;
     }
-    .about{
-    }
     .about .img-profil{
         flex-direction: row;
-        gap: 300px;
+        gap: 100px;
     }
     .about .img-profil p,.about .img-profil h3{
         text-align: left;
