@@ -1,4 +1,4 @@
 # Portfolio
-http://sabirkhaloufi.me/Portfolio/
+http://sabirkhaloufi.me
 ## Technologie utiliser :
 HTML,CSS,JavaScript
